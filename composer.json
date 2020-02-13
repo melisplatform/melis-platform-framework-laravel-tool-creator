@@ -33,7 +33,7 @@
   "require": {
     "melisplatform/melis-tool-creator": "*",
     "melisplatform/melis-tool-creator-laravel": "*",
-    "melisplatform/melis-platform-framework-laravel": "*",
+    "melisplatform/melis-platform-framework-laravel": "*"
   },
   "autoload": {
     "psr-4": {
