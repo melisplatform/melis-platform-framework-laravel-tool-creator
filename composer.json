@@ -3,7 +3,7 @@
   "description": "Melis Platform Framework Laravel Tool Creator",
   "type": "melisplatform-module",
   "license": "OSL-3.0",
-  "homepage": "https://github.com/melisplatform/melis-tool-creator-laravel",
+  "homepage": "https://github.com/melisplatform/melis-platform-framework-laravel-tool-creator",
   "support": {
     "email": "contact@melistechnology.com",
     "source": "https://github.com/melisplatform/melis-platform-framework-laravel-tool-creator",
