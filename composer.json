@@ -26,6 +26,7 @@
   ],
   "extra": {
     "module-name": "MelisPlatformFrameworkLaravelToolCreator",
+    "melis-module": false,
     "dbdeploy": false,
     "melis-site": false,
     "melis-module-category": "core"
