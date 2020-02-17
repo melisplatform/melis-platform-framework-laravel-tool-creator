@@ -1,11 +1,14 @@
 # Melis Tool Creator Laravel
 This module handle the creation of the Third party Laravel framework
 
-# Clone project
-```bash
-git clone https://github.com/melisplatform/melis-platform-framework-laravel-tool-creator.git
-```
+### Prerequisites
+This module requires ``melisplatform/melis-tool-creator``, ``melisplatform/melis-platform-frameworks`` and ``melisplatform/melis-platform-framework-laravel`` installed.
+This will automatically be done when using composer.
 
+### Installing
+```
+composer require melisplatform/melis-platform-framework-laravel-tool-creator
+```
 
 ## Authors
 * **Melis Technology** - [www.melistechnology.com](https://www.melistechnology.com/)
