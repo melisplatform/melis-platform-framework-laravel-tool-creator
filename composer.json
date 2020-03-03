@@ -32,9 +32,9 @@
     "melis-module-category": "core"
   },
   "require": {
-    "melisplatform/melis-tool-creator": "*",
-    "melisplatform/melis-tool-creator-laravel": "*",
-    "melisplatform/melis-platform-framework-laravel": "*"
+    "melisplatform/melis-tool-creator": "^3.2",
+    "melisplatform/melis-tool-creator-laravel": "^3.2",
+    "melisplatform/melis-platform-framework-laravel": "^3.2"
   },
   "autoload": {
     "psr-4": {
