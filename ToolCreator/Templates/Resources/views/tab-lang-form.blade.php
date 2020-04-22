@@ -57,7 +57,7 @@
                                 <a class="clearfix" data-toggle="tab" href="#moduletpl-text-translation-{{ $lang['lang_cms_locale'] }}" aria-expanded="false">
                                     @php
                                         $langLabel = '<span>'. $lang['lang_cms_name'] .'</span>';
-                                        $moduleSvc = app('ZendServiceManager')->get('ModulesService');
+                                        $moduleSvc = app('LaminasServiceManager')->get('ModulesService');
                                         if (file_exists($moduleSvc->getModulePath('MelisCms').'/public/images/lang-flags/'.$lang['lang_cms_locale'].'.png')){
                                             $langLabel .= '<span class="pull-right"><img src="/MelisCms/images/lang-flags/'.$lang['lang_cms_locale'].'.png"></span>';
                                         }

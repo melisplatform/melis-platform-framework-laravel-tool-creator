@@ -1,44 +1,44 @@
 {
-  "name": "melisplatform/melis-platform-framework-laravel-tool-creator",
-  "description": "Melis Platform Framework Laravel Tool Creator",
-  "type": "melisplatform-module",
-  "license": "OSL-3.0",
-  "homepage": "https://github.com/melisplatform/melis-platform-framework-laravel-tool-creator",
-  "support": {
-    "email": "contact@melistechnology.com",
-    "source": "https://github.com/melisplatform/melis-platform-framework-laravel-tool-creator",
-    "issues": "https://github.com/melisplatform/melis-platform-framework-laravel-tool-creator/issues",
-    "docs": "https://www.melistechnology.com/melistechnology/resources/download-documentation/id/17#documentation"
-  },
-  "authors": [
-    {
-      "name": "Melis Technology",
-      "email": "contact@melistechnology.com",
-      "homepage": "https://www.melistechnology.com",
-      "role": "Developer"
+    "name": "melisplatform/melis-platform-framework-laravel-tool-creator",
+    "description": "Melis Platform Framework Laravel Tool Creator",
+    "type": "melisplatform-module",
+    "license": "OSL-3.0",
+    "homepage": "https://github.com/melisplatform/melis-platform-framework-laravel-tool-creator",
+    "support": {
+        "email": "contact@melistechnology.com",
+        "source": "https://github.com/melisplatform/melis-platform-framework-laravel-tool-creator",
+        "issues": "https://github.com/melisplatform/melis-platform-framework-laravel-tool-creator/issues",
+        "docs": "https://www.melistechnology.com/melistechnology/resources/download-documentation/id/17#documentation"
+    },
+    "authors": [
+        {
+            "name": "Melis Technology",
+            "email": "contact@melistechnology.com",
+            "homepage": "https://www.melistechnology.com",
+            "role": "Developer"
+        }
+    ],
+    "keywords": [
+        "cms",
+        "melis",
+        "zf2",
+        "module"
+    ],
+    "extra": {
+        "module-name": "MelisPlatformFrameworkLaravelToolCreator",
+        "melis-module": false,
+        "dbdeploy": false,
+        "melis-site": false,
+        "melis-module-category": "core"
+    },
+    "require": {
+        "melisplatform/melis-tool-creator": "*",
+        "melisplatform/melis-tool-creator-laravel": "*",
+        "melisplatform/melis-platform-framework-laravel": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "MelisPlatformFrameworkLaravelToolCreator\\": "/"
+        }
     }
-  ],
-  "keywords": [
-    "cms",
-    "melis",
-    "zf2",
-    "module"
-  ],
-  "extra": {
-    "module-name": "MelisPlatformFrameworkLaravelToolCreator",
-    "melis-module": false,
-    "dbdeploy": false,
-    "melis-site": false,
-    "melis-module-category": "core"
-  },
-  "require": {
-    "melisplatform/melis-tool-creator": "*",
-    "melisplatform/melis-tool-creator-laravel": "*",
-    "melisplatform/melis-platform-framework-laravel": "*"
-  },
-  "autoload": {
-    "psr-4": {
-      "MelisPlatformFrameworkLaravelToolCreator\\": "/"
-    }
-  }
 }
