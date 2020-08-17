@@ -3,7 +3,7 @@
 namespace Modules\ModuleTpl\Entities;
 
 use MelisPlatformFrameworkLaravel\Entities\GenericModel;
-use MelisPlatformFrameworkLaravel\Providers\ZendServiceProvider;
+use MelisPlatformFrameworkLaravel\Providers\LaminasServiceProvider;
 
 class ModelLangName extends GenericModel
 {

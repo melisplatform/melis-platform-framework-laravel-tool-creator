@@ -3,8 +3,8 @@
 namespace Modules\ModuleTpl\Entities;
 
 use MelisPlatformFrameworkLaravel\Entities\GenericModel;
-use MelisPlatformFrameworkLaravel\Helpers\ZendEvent;
-use MelisPlatformFrameworkLaravel\Providers\ZendServiceProvider;
+use MelisPlatformFrameworkLaravel\Helpers\LaminasEvent;
+use MelisPlatformFrameworkLaravel\Providers\LaminasServiceProvider;
 
 class ModelName extends GenericModel
 {

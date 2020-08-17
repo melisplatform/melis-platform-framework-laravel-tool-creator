@@ -1,2 +1,2 @@
                 if ($col == '#TCKEY')
-                    $data[$key][$col] = ZendEvent::sendEvent('melis_tool_column_display_#TCCOLDISPLAY', $row);
+                    $data[$key][$col] = LaminasEvent::sendEvent('melis_tool_column_display_#TCCOLDISPLAY', $row);

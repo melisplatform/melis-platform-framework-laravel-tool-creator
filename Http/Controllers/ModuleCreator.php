@@ -5,14 +5,14 @@ namespace MelisPlatformFrameworkLaravelToolCreator\Http\Controllers;
 use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\DB;
-use Zend\Session\Container;
+use Laminas\Session\Container;
 
 class ModuleCreator extends Controller
 {
 
     private $config;
     const MODULE_DIR = __DIR__ . '/../../../../../thirdparty/Laravel/Modules/';
-    const ZEND_MODULE = __DIR__ .'/../../../../../module/';
+    const LAMINAS_MODULE = __DIR__ .'/../../../../../module/';
     const MODULE_TPL = __DIR__ . '/../../ToolCreator/Templates/';
 
     public function __construct()
@@ -72,7 +72,7 @@ class ModuleCreator extends Controller
         // Module Json
         $this->moduleJson();
 
-        // Adding Js to zend module
+        // Adding Js to Laminas module
         $this->setupJs();
 
         // Activating new generated module in laravel using Artisan
@@ -829,7 +829,7 @@ class ModuleCreator extends Controller
 
         $file = $this->fgc('Resources/assets/js/'.$temp);
 
-        $moduleAssetsDir = self::ZEND_MODULE.$this->moduleName().DIRECTORY_SEPARATOR.'public/js';
+        $moduleAssetsDir = self::LAMINAS_MODULE.$this->moduleName().DIRECTORY_SEPARATOR.'public/js';
 
         $langFromData = '';
         if ($this->hasLanguage()) {
