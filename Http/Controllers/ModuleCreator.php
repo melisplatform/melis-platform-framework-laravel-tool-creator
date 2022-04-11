@@ -1029,7 +1029,7 @@ class ModuleCreator extends Controller
 
     private function hasLanguage()
     {
-        return ($this->config['step3']['tcf-db-table-has-language']) ? true : false;
+        return (isset($this->config['step3']['tcf-db-table-has-language'])) ? true : false;
     }
 
 }
