@@ -1,0 +1,4 @@
+        
+        $modelSecondary = new \Modules\ModuleTpl\Entities\ModelSecondaryName();
+        $langFk = $modelSecondary::LANG_FOREIGN_KEY;  
+        

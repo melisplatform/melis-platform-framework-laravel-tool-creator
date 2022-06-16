@@ -10,10 +10,12 @@
 
         if ($id)
             $model = ModelName::find($id);
+#TCLANGFOREIGNKEY
 
         $param = [
             'id' => $id,
-            'model' =>  $model
+            'model' =>  $model,
+            #TCLANGFK         
         ];
 
 #TCLANGCMS
