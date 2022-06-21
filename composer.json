@@ -33,9 +33,9 @@
 	},
 	"require": {
 		"php": "^7.3|^8.0",
-		"melisplatform/melis-tool-creator": "^4.0",
-		"melisplatform/melis-tool-creator-laravel": "^4.0",
-		"melisplatform/melis-platform-framework-laravel": "^4.0"
+		"melisplatform/melis-tool-creator": "^5.0",
+		"melisplatform/melis-tool-creator-laravel": "^5.0",
+		"melisplatform/melis-platform-framework-laravel": "^5.0"
 	},
 	"autoload": {
 		"psr-4": {
