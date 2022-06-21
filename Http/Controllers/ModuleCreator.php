@@ -449,13 +449,19 @@ class ModuleCreator extends Controller
         if ($this->isDbTool()) {
 
             $toolForm = $this->fgc('Codes/form-function');
+            $langFKQuery = ($this->hasLanguage()) ? $this->fgc('Codes/lang-fk-query') : '';//retrieve the language foreign key
             $langQuery = ($this->hasLanguage()) ? $this->fgc('Codes/cms-lang-query') : '';
             $toolForm = $this->sp('#TCLANGCMS', $langQuery, $toolForm);
+            $toolForm = $this->sp('#TCLANGFOREIGNKEY', $langFKQuery, $toolForm);
+            $toolForm = $this->sp('#TCLANGFK', (($this->hasLanguage()) ? "'langFk' => \$langFk" : ''), $toolForm);
         }
 
         $file = $this->sp('#TCTOOLTYPEEDTION', $toolForm, $file);
 
         $file = $this->sp('ModelName', $entityName, $file);
+        if ($this->hasLanguage()) {
+            $file = $this->sp('ModelSecondaryName', $this->makeEntityName($this->getLangTable()), $file);
+        }        
 
         $this->generateModuleFile($fileName, $curDir, $file);
     }
@@ -1029,7 +1035,7 @@ class ModuleCreator extends Controller
 
     private function hasLanguage()
     {
-        return ($this->config['step3']['tcf-db-table-has-language']) ? true : false;
+        return (!empty($this->config['step3']['tcf-db-table-has-language'])) ? true : false;
     }
 
 }

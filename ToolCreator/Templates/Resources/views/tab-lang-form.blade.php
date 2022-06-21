@@ -80,12 +80,12 @@
                             @php
                                 $formAttr = ['id' => 'moduletpl-lang-form-'.$lang['lang_cms_id'], 'data-lang-id' => $lang['lang_cms_id'], 'class' => 'moduletpl-lang-form'];
                                 $data = null;
-                                $defaultData['cnews_lang_id'] = $lang['lang_cms_id'];
+                                $defaultData[$langFk] = $lang['lang_cms_id'];
                             @endphp
 
                             @if(!empty($model->languages))
                                 @foreach($model->languages As $slang)
-                                    @if($slang->cnews_lang_id == $lang['lang_cms_id'])
+                                    @if($slang->$langFk == $lang['lang_cms_id'])
                                         @php $data = $slang @endphp
                                         @break
                                     @endif
