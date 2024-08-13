@@ -34,8 +34,8 @@
 	"require": {
 		"php": "^8.1|^8.3",
 		"melisplatform/melis-tool-creator": "*",
-		"melisplatform/melis-tool-creator-laravel": "dev-update/php83",
-		"melisplatform/melis-platform-framework-laravel": "dev-update/php83"
+		"melisplatform/melis-tool-creator-laravel": "*",
+		"melisplatform/melis-platform-framework-laravel": "*"
 	},
 	"autoload": {
 		"psr-4": {
