@@ -5,12 +5,12 @@
                 <div class="widget-head">
                     <ul class="nav nav-tabs">
                         <li class="active">
-                            <a href="#moduletpl-tool-modal-main" class="glyphicons {{ $id ? 'pencil' : 'plus' }}" data-toggle="tab" aria-expanded="true"><i></i>
+                            <a href="#moduletpl-tool-modal-main" class="glyphicons {{ $id ? 'pencil' : 'plus' }}" data-bs-toggle="tab" aria-expanded="true"><i></i>
                                 {{ $id ? __('moduletpl::messages.properties') : __('moduletpl::messages.add_item') }}
                             </a>
                         </li>
                         <li>
-                            <a href="#moduletpl-tool-modal-language" class="glyphicons font" data-toggle="tab" aria-expanded="true"><i></i>
+                            <a href="#moduletpl-tool-modal-language" class="glyphicons font" data-bs-toggle="tab" aria-expanded="true"><i></i>
                                 {{ __('moduletpl::messages.texts') }}
                             </a>
                         </li>
@@ -45,7 +45,7 @@
                                         <ul class="nav-tabs product-text-tab">
                                             @foreach($langs As $key => $lang)
                                                 <li class="{{ ($key) ? '':'active' }}">
-                                                    <a class="clearfix" data-toggle="tab" href="#moduletpl-text-translation-{{ $lang['lang_cms_locale'] }}" aria-expanded="false">
+                                                    <a class="clearfix" data-bs-toggle="tab" href="#moduletpl-text-translation-{{ $lang['lang_cms_locale'] }}" aria-expanded="false">
                                                         @php
                                                             $langLabel = '<span>'. $lang['lang_cms_name'] .'</span>';
                                                             $moduleSvc = app('LaminasServiceManager')->get('ModulesService');
@@ -101,7 +101,7 @@
                             </div>
                         </div>
                         <div align="right">
-                            <a data-dismiss="modal" class="btn btn-danger pull-left"><i class="fa fa-times"></i> {{ __('moduletpl::messages.common_close') }}</a>
+                            <a data-bs-dismiss="modal" class="btn btn-danger pull-left"><i class="fa fa-times"></i> {{ __('moduletpl::messages.common_close') }}</a>
                             <a class="btn btn-success moduletpl-btn-save-action" {{ $id ? 'data-id=' .$id : '' }}><i class="fa fa-save"></i>  {{ __('moduletpl::messages.common_save') }}</a>
                         </div>
                     </div>

@@ -5,7 +5,7 @@
                 <div class="widget-head">
                     <ul class="nav nav-tabs">
                         <li class="active">
-                            <a href="#moduletpl-tool-modal" class="glyphicons {{ $id ? 'pencil' : 'plus' }}" data-toggle="tab" aria-expanded="true"><i></i>
+                            <a href="#moduletpl-tool-modal" class="glyphicons {{ $id ? 'pencil' : 'plus' }}" data-bs-toggle="tab" aria-expanded="true"><i></i>
                                 {{ $id ? __('moduletpl::messages.properties') : __('moduletpl::messages.add_item') }}
                             </a>
                         </li>
@@ -33,7 +33,7 @@
                             </div>
                         </div>
                         <div class="footer-modal d-flex flex-row justify-content-between">
-                            <a data-dismiss="modal" class="btn btn-danger float-left"><i class="fa fa-times"></i> {{ __('moduletpl::messages.common_close') }}</a>
+                            <a data-bs-dismiss="modal" class="btn btn-danger float-left"><i class="fa fa-times"></i> {{ __('moduletpl::messages.common_close') }}</a>
                             <a class="btn btn-success moduletpl-btn-save-action" {{ $id ? 'data-id=' .$id : '' }}><i class="fa fa-save"></i>  {{ __('moduletpl::messages.common_save') }}</a>
                         </div>
                     </div>

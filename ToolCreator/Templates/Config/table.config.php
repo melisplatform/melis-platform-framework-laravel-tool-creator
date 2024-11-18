@@ -19,7 +19,7 @@ return [
                 'search' => "f"
             ],
             'right' => [
-                'refresh' => '<div class="moduletpl-table-refresh"><a class="btn btn-default moduletpl-refresh-content" data-toggle="tab" aria-expanded="true" title="'. __('moduletpl::messages.common_refresh') .'"><i class="fa fa-refresh"></i></a></div>'
+                'refresh' => '<div class="moduletpl-table-refresh"><a class="btn btn-default moduletpl-refresh-content" aria-expanded="true" title="'. __('moduletpl::messages.common_refresh') .'"><i class="fa fa-refresh"></i></a></div>'
             ],
         ],
         'columns' => [

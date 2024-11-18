@@ -15,12 +15,12 @@
     <div class="widget-head nav">
         <ul class="tabs-label nav-tabs">
             <li class="active">
-                <a href="#moduletpl-tool-tab-{{ $itemId }}" class="glyphicons tag" data-toggle="tab" aria-expanded="true"><i></i>
+                <a href="#moduletpl-tool-tab-{{ $itemId }}" class="glyphicons tag" data-bs-toggle="tab" aria-expanded="true"><i></i>
                     <span>{{ __('moduletpl::messages.properties') }}</span>
                 </a>
             </li>
             <li>
-                <a href="#moduletpl-tool-tab-language-{{ $itemId }}" class="glyphicons font" data-toggle="tab" aria-expanded="true"><i></i>
+                <a href="#moduletpl-tool-tab-language-{{ $itemId }}" class="glyphicons font" data-bs-toggle="tab" aria-expanded="true"><i></i>
                     <span>{{ __('moduletpl::messages.texts') }}</span>
                 </a>
             </li>
@@ -54,7 +54,7 @@
                     <ul class="nav-tabs product-text-tab">
                         @foreach($langs As $key => $lang)
                             <li class="{{ ($key) ? '':'active' }}">
-                                <a class="clearfix" data-toggle="tab" href="#moduletpl-text-translation-{{ $lang['lang_cms_locale'] }}" aria-expanded="false">
+                                <a class="clearfix" data-bs-toggle="tab" href="#moduletpl-text-translation-{{ $lang['lang_cms_locale'] }}" aria-expanded="false">
                                     @php
                                         $langLabel = '<span>'. $lang['lang_cms_name'] .'</span>';
                                         $moduleSvc = app('LaminasServiceManager')->get('ModulesService');

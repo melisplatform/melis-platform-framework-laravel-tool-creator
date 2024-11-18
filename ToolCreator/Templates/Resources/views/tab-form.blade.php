@@ -15,7 +15,7 @@
     <div class="widget-head nav">
         <ul class="tabs-label nav-tabs">
             <li class="active">
-                <a href="#moduletpl-tool-tab-{{ $itemId }}" class="glyphicons tag" data-toggle="tab" aria-expanded="true"><i></i>
+                <a href="#moduletpl-tool-tab-{{ $itemId }}" class="glyphicons tag" data-bs-toggle="tab" aria-expanded="true"><i></i>
                     <span>{{ __('moduletpl::messages.properties') }}</span>
                 </a>
             </li>

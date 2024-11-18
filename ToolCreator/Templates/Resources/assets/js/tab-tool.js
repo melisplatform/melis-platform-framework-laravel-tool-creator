@@ -20,13 +20,13 @@ $(function(){
 
     var submitForm  = function(form, id, btn){
 
-        form.unbind("submit");
+        form.off("submit");
 
         form.on("submit", function(e) {
 
             e.preventDefault();
 
-            btn.attr('disabled', true);
+            btn.prop('disabled', true);
 
             var formData = new FormData(this);
 
@@ -69,14 +69,14 @@ $(function(){
                 //  Melis js helper that highlight input errors
                 melisHelper.highlightMultiErrors(data.success, data.errors, ".moduletpl-form-container-"+id);
 
-                btn.attr('disabled', false);
+                btn.prop('disabled', false);
 
             }).fail(function () {
                 console.log(translations.tr_meliscore_error_message);
             });
         });
 
-        form.submit();
+        form.trigger("submit");
     };
 
     $body.on("click", ".moduletpl-btn-save-action", function(){
